@@ -1,6 +1,27 @@
-text {
+/*
+Copyright (C) 2016 Ömer Güvenir
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+* {
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        text {
             font: 12px Arial;
-            fill:#777;
+            fill: #777;
         }
         
         .axis text {
@@ -30,9 +51,11 @@ text {
             opacity: 0.1;
         }
         
-        .labell,.count , .percent {
+        .labell,
+        .count,
+        .percent {
             font-size: 12px ! important;
-            color:#ccc;
+            color: #ccc;
         }
         /*histogram ve density*/
         
@@ -47,7 +70,7 @@ text {
             stroke-width: 2;
         }
         
-        .chart.tooltip {
+        .barv.tooltip {
             background: #212121;
             box-shadow: 0 0 5px #c1c1c1;
             color: #757575;
@@ -60,8 +83,20 @@ text {
             height: 60px;
             z-index: 1;
         }
-        
-        .chart.tooltip2 {
+        .barh.tooltip {
+            background: #212121;
+            box-shadow: 0 0 5px #c1c1c1;
+            color: #757575;
+            display: none;
+            font-size: 15px;
+            padding: 10px;
+            position: absolute;
+            text-align: center;
+            width: 100px;
+            height: 60px;
+            z-index: 1;
+        }
+        .box.tooltip2 {
             background: #212121;
             box-shadow: 0 0 5px #c1c1c1;
             color: #757575;
@@ -72,6 +107,32 @@ text {
             text-align: center;
             width: 125px;
             height: 100px;
+            z-index: 1;
+        }
+        .error.tooltip {
+            background: #212121;
+            box-shadow: 0 0 5px #c1c1c1;
+            color: #757575;
+            display: none;
+            font-size: 15px;
+            padding: 10px;
+            position: absolute;
+            text-align: center;
+            width: 100px;
+            height: 60px;
+            z-index: 1;
+        }
+        .line.tooltip {
+            background: #212121;
+            box-shadow: 0 0 5px #c1c1c1;
+            color: #757575;
+            display: none;
+            font-size: 15px;
+            padding: 10px;
+            position: absolute;
+            text-align: center;
+            width: 100px;
+            height: 60px;
             z-index: 1;
         }
         
