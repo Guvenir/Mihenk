@@ -106,7 +106,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             position: absolute;
             text-align: center;
             width: 125px;
-            height: 100px;
+            height: 115px;
             z-index: 1;
         }
         .error.tooltip {
