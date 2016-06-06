@@ -28,8 +28,8 @@ app.controller('d3demo', function($scope) {
         //console.log($scope.grafik);
         $scope.chart($scope.grafik);
     }
-    
-    $scope.test2 = function(){
+
+    $scope.test2 = function() {
         $scope.chart2($scope.grafik);
     }
 
@@ -273,8 +273,8 @@ app.controller('d3demo', function($scope) {
         mihenk.barchart(mihenkdata);
 
     }
-    
-    $scope.barhorizontal = function(){
+
+    $scope.barhorizontal = function() {
         var xdata = [];
         var ydata = [];
         var tempa = [];
@@ -302,8 +302,8 @@ app.controller('d3demo', function($scope) {
         //mihenkdata.ydata = xdata;
         mihenk.barhorizontal(mihenkdata);
     };
-    
-    $scope.barvertical = function(){
+
+    $scope.barvertical = function() {
         var xdata = [];
         var ydata = [];
         var tempa = [];
@@ -331,8 +331,8 @@ app.controller('d3demo', function($scope) {
         //mihenkdata.ydata = ydata;
         mihenk.barchart(mihenkdata);
     };
-    
-    $scope.box = function(){
+
+    $scope.box = function() {
         var mihenkdata = {
             "data": [
                 {
@@ -386,11 +386,11 @@ app.controller('d3demo', function($scope) {
                 "div_id": "graph3"
             }
         }
-        
+
         mihenk.box(mihenkdata);
     }
-    
-    $scope.error = function(){
+
+    $scope.error = function() {
         var mihenkdata = {
             "data": [
                 {
@@ -422,11 +422,11 @@ app.controller('d3demo', function($scope) {
                 "div_id": "graph4"
             }
         }
-        
+
         mihenk.error(mihenkdata);
     }
-    
-    $scope.line = function(){
+
+    $scope.line = function() {
         var mihenkdata = {
             "xdata": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
             "ydata": [21, 18, 23, 16, 25, 20, 27, 35, 29, 18, 16, 26, 33, 19, 35],
@@ -440,7 +440,7 @@ app.controller('d3demo', function($scope) {
                 "div_id": "graph5"
             }
         }
-        
+
         mihenk.line(mihenkdata);
     }
 

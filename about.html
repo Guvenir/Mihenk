@@ -15,13 +15,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css" />
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
-    crossorigin="anonymous">
+    
 
-    <!-- AdminLTE-->
-    <link rel="stylesheet" href="css/AdminLTE.css">
-    <link rel="stylesheet" href="css/skins/_all-skins.min.css">
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -309,10 +308,10 @@
     </style>
 </head>
 
-<body ng-controller="d3demo" style="background:#f2f2f2">
+<body ng-controller="d3demo" style="background:#fff">
     <!--navbar başlangıcı-->
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" style="border:none">
         <div class="container-fluid">
 
             <div class="navbar-header">
@@ -323,8 +322,8 @@
                 </button>
 
                 <a class="navbar-brand" href="index.html" style="margin-top:5px;" title="The Title">
-                    <a href="#" class="pull-left"><img src="img/64.png" /></a>
-                    <span class="navbar-brand" style="margin-top:5px">Mihenk</span>
+                    <a href="#" class="pull-left"><img src="img/drawing4.svg" style="margin-top:5px" /></a>
+                    <span class="navbar-brand" style="margin-top:5px;margin-left:2px"> Mihenk</span>
                 </a>
             </div>
 
@@ -336,8 +335,8 @@
                         <a href="about.html"><span class="fa fa-question" /> About</a>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav pull-right" style="margin-top:15px;">
-                     <a href="https://github.com/Guvenir/mihenkjs" class="btn btn-default" style="background:#69C7D0;color:#ededed;">
+                <ul class="nav navbar-nav pull-right" style="margin-top:5px;">
+                     <a href="https://github.com/Guvenir/mihenkjs" class="btn btn-primary">
                         <span class="fa fa-download" /> Download
                     </a>
                 </ul>
@@ -355,18 +354,15 @@
         <div class="row">
             <div class="col-lg-1"></div>
             <div class="col-lg-10">
-                <div class="col-lg-12">
-                    <div class="panel panel-default" style="text-align:center">
+                <div class="col-lg-12"  style="text-align:center">
                         <br>
                         <h3>Mihenk</h3>
-                        <h4>Mihenk d3.js based , open source graphics library and
-                        Mihenk is available under the GPLv3 license.</h4>
-                        <h4>Responsive Design , Zoom and Drag , Easy Usage , Download Png and Svg , Open Source </h4>
+                        <p>Mihenk d3.js based , open source graphics library and
+                        Mihenk is available under the GPLv3 license.</p>
+                        <p>Responsive Design , Zoom and Drag , Easy Usage , Download Png and Svg , Open Source </p>
                         <br>
                     </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="panel panel-default" style="text-align:center">
+                <div class="col-lg-12" style="text-align:center">
                         <br>
                         <a href="http:www.oguvenir.com"><img src="img/logo.png" /></a>
                         <br>
@@ -385,7 +381,6 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
 
@@ -397,9 +392,9 @@
     </div>
     </div>
 
-    <div class="navbar navbar-default navbar-fixed-bottom" style="background:white;text-align:center">
+    <div class="footer" style="background:white;text-align:center">
         <div class="container">
-            <h4 style="margin-top:15px;font-size:12px"><a href="http://www.oguvenir.com">Ömer Güvenir 2016</a></h4>
+            <h4 style="margin-top:15px;font-size:12px"><a href="http://www.oguvenir.com">Ömer Güvenir 2016</a><a class="pull-right" href="http://designmodo.github.io/Flat-UI/">Theme : Flat UI</a></h4>
         </div>
     </div>
     <!-- Angular Controller-->

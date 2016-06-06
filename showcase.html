@@ -15,13 +15,12 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
-    crossorigin="anonymous">
+    
 
-    <!-- AdminLTE-->
-    <link rel="stylesheet" href="css/AdminLTE.css">
-    <link rel="stylesheet" href="css/skins/_all-skins.min.css">
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -46,10 +45,10 @@
 
 </head>
 
-<body ng-controller="d3demo" style="background:#f2f2f2">
+<body ng-controller="d3demo" style="background:#fff">
     <!--navbar başlangıcı-->
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" style="border:none">
         <div class="container-fluid">
 
             <div class="navbar-header">
@@ -60,8 +59,8 @@
                 </button>
 
                 <a class="navbar-brand" href="index.html" style="margin-top:5px;" title="The Title">
-                    <a href="#" class="pull-left"><img src="img/64.png" /></a>
-                    <span class="navbar-brand" style="margin-top:5px">Mihenk</span>
+                    <a href="#" class="pull-left"><img src="img/drawing4.svg" style="margin-top:5px" /></a>
+                    <span class="navbar-brand" style="margin-top:5px;margin-left:2px"> Mihenk</span>
                 </a>
             </div>
 
@@ -73,8 +72,8 @@
                         <a href="about.html"><span class="fa fa-question" /> About</a>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav pull-right" style="margin-top:15px;">
-                     <a href="https://github.com/Guvenir/mihenkjs" class="btn btn-default" style="background:#69C7D0;color:#ededed;">
+                <ul class="nav navbar-nav pull-right" style="margin-top:5px;">
+                     <a href="https://github.com/Guvenir/mihenkjs" class="btn btn-primary">
                         <span class="fa fa-download" /> Download
                     </a>
                 </ul>
@@ -96,8 +95,8 @@
             <!-- Bar -->
             <div class="box box-info" ng-init="test1()">
                 <div class="box-header with-border" style="text-align:center">
-                    <h3 class="box-title">Bar</h3>
-                    <div class="box-tools pull-right">
+                    <h5 class="box-title">Bar</h5>
+                    <!--<div class="box-tools pull-right">
                         <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                     </div>
                     <!-- /.box-tools -->
@@ -105,10 +104,10 @@
                 <!-- /.box-header -->
                 <div class="box-body" style="display: block;">
                     <div class="col-lg-12">
-                        <a href="charts/barvertical.html" class="btn btn-default" style="background:#69C7D0;color:#ededed;">How to use?</a>
-                        <button ng-click="pngindir('graph')" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Png</button>
-                        <button ng-click="svgindir('graph')" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Svg</button>
-                        <button ng-click="test1()" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-refresh" /></button>
+                        <a href="charts/barvertical.html" class="btn btn-success" >How to use?</a>
+                        <button ng-click="pngindir('graph')" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Png</button>
+                        <button ng-click="svgindir('graph')" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Svg</button>
+                        <button ng-click="test1()" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-refresh" /></button>
                         <br/>
                         <br/>
                         <br/>
@@ -125,8 +124,8 @@
             <!-- Bar Horizontal-->
             <div class="box box-info" ng-init="test1()">
                 <div class="box-header with-border" style="text-align:center">
-                    <h3 class="box-title">Bar</h3>
-                    <div class="box-tools pull-right">
+                    <h5 class="box-title">Bar</h5>
+                    <!--<div class="box-tools pull-right">
                         <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                     </div>
                     <!-- /.box-tools -->
@@ -134,10 +133,10 @@
                 <!-- /.box-header -->
                 <div class="box-body" style="display: block;">
                     <div class="col-lg-12">
-                        <a href="charts/barhorizontal.html" class="btn btn-default" style="background:#69C7D0;color:#ededed;">How to use?</a>
-                        <button ng-click="pngindir('graph2')" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Png</button>
-                        <button ng-click="svgindir('graph2')" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Svg</button>
-                        <button ng-click="test1()" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-refresh" /></button>
+                        <a href="charts/barhorizontal.html" class="btn btn-success" >How to use?</a>
+                        <button ng-click="pngindir('graph2')" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Png</button>
+                        <button ng-click="svgindir('graph2')" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Svg</button>
+                        <button ng-click="test1()" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-refresh" /></button>
                         <br/>
                         <br/>
                         <br/>
@@ -154,8 +153,8 @@
             <!-- Box -->
             <div class="box box-info" ng-init="test1()">
                 <div class="box-header with-border" style="text-align:center">
-                    <h3 class="box-title">Box</h3>
-                    <div class="box-tools pull-right">
+                    <h5 class="box-title">Box</h5>
+                    <!--<div class="box-tools pull-right">
                         <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                     </div>
                     <!-- /.box-tools -->
@@ -163,11 +162,11 @@
                 <!-- /.box-header -->
                 <div class="box-body" style="display: block;">
                     <div class="col-lg-12">
-                        <a href="charts/box.html" class="btn btn-default" style="background:#69C7D0;color:#ededed;">How to use?</a>
+                        <a href="charts/box.html" class="btn btn-success" >How to use?</a>
 
-                        <button ng-click="pngindir('graph3')" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Png</button>
-                        <button ng-click="svgindir('graph3')" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Svg</button>
-                        <button ng-click="test1()" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-refresh" /></button>
+                        <button ng-click="pngindir('graph3')" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Png</button>
+                        <button ng-click="svgindir('graph3')" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Svg</button>
+                        <button ng-click="test1()" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-refresh" /></button>
                         <br/>
                         <br/>
                         <br/>
@@ -184,8 +183,8 @@
             <!--Error-->
             <div class="box box-info" ng-init="test1()">
                 <div class="box-header with-border" style="text-align:center">
-                    <h3 class="box-title">Error</h3>
-                    <div class="box-tools pull-right">
+                    <h5 class="box-title">Error</h5>
+                    <!--<div class="box-tools pull-right">
                         <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                     </div>
                     <!-- /.box-tools -->
@@ -193,11 +192,11 @@
                 <!-- /.box-header -->
                 <div class="box-body" style="display: block;">
                     <div class="col-lg-12">
-                        <a href="charts/error.html" class="btn btn-default" style="background:#69C7D0;color:#ededed;">How to use?</a>
+                        <a href="charts/error.html" class="btn btn-success">How to use?</a>
 
-                        <button ng-click="pngindir('graph4')" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Png</button>
-                        <button ng-click="svgindir('graph4')" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Svg</button>
-                        <button ng-click="test1()" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-refresh" /></button>
+                        <button ng-click="pngindir('graph4')" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Png</button>
+                        <button ng-click="svgindir('graph4')" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Svg</button>
+                        <button ng-click="test1()" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-refresh" /></button>
                         <br/>
                         <br/>
                         <br/>
@@ -214,8 +213,8 @@
             <!--Line-->
             <div class="box box-info" ng-init="test1()">
                 <div class="box-header with-border" style="text-align:center">
-                    <h3 class="box-title">Line</h3>
-                    <div class="box-tools pull-right">
+                    <h5 class="box-title">Line</h5>
+                    <!--<div class="box-tools pull-right">
                         <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                     </div>
                     <!-- /.box-tools -->
@@ -223,11 +222,11 @@
                 <!-- /.box-header -->
                 <div class="box-body" style="display: block;">
                     <div class="col-lg-12">
-                        <a href="charts/line.html" class="btn btn-default" style="background:#69C7D0;color:#ededed;">How to use?</a>
+                        <a href="charts/line.html" class="btn btn-success" >How to use?</a>
 
-                        <button ng-click="pngindir('graph5')" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Png</button>
-                        <button ng-click="svgindir('graph5')" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Svg</button>
-                        <button ng-click="test1()" class="btn btn-default btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-refresh" /></button>
+                        <button ng-click="pngindir('graph5')" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Png</button>
+                        <button ng-click="svgindir('graph5')" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Svg</button>
+                        <button ng-click="test1()" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-refresh" /></button>
                         <br/>
                         <br/>
                         <br/>
@@ -249,7 +248,7 @@
 
     <div class="footer" style="background:white;text-align:center">
         <div class="container">
-            <h4 style="margin-top:15px;font-size:12px"><a href="http://www.oguvenir.com">Ömer Güvenir 2016</a></h4>
+            <h4 style="margin-top:15px;font-size:12px"><a href="http://www.oguvenir.com">Ömer Güvenir 2016</a><a class="pull-right" href="http://designmodo.github.io/Flat-UI/">Theme : Flat UI</a></h4>
         </div>
     </div>
     <!-- Angular Controller-->
