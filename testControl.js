@@ -1,25 +1,4 @@
-var app = angular.module('test', ['ngRoute']);
-
-app.config(['$routeProvider', '$locationProvider',
-    function($routeProvider, $locationProvider) {
-        $routeProvider
-            .when('/about', {
-                templateUrl: 'about.html',
-                controller: 'aboutCtrl'
-            })
-            .when('/showcase', {
-                templateUrl: 'showcase.html',
-                controller: 'showCtrl'
-            })
-            .when('/home', {
-                templateUrl: 'home.html',
-                controller: 'd3demo'
-            })
-            .otherwise({
-                redirectTo: '/home'
-            });
-        $locationProvider.html5Mode(true);
-    }]);
+var app = angular.module('test', []);
 app.controller('d3demo', function($scope) {
 
     $scope.grafik = {
@@ -499,12 +478,4 @@ app.controller('d3demo', function($scope) {
         //console.log(d3.select("#"+val).select("svg")[0][0]);
         saveSvgAsPng(d3.select("#" + val).select("svg")[0][0], "diagram.png", { backgroundColor: "white", scale: 2 });
     }
-});
-
-app.controller('aboutCtrl',function($scope){
-    
-});
-
-app.controller('showCtrl',function($scope){
-    
 });
