@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <base href="/" />
     <meta name="keywords" content="mihenk , mihenk js , chart library , mihenk chart library">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Mihenk -->
@@ -36,7 +37,8 @@
     crossorigin="anonymous"></script>
 
     <!--AngularJS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
 
     <!--Google Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
@@ -60,7 +62,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="index.html" style="margin-top:5px;" title="The Title">
+                <a class="navbar-brand" href="home" style="margin-top:5px;" title="The Title">
                     <a href="#" class="pull-left"><img src="img/drawing4.svg" style="margin-top:5px" /></a>
                     <span class="navbar-brand" style="margin-top:5px;margin-left:2px"> Mihenk</span>
                 </a>
@@ -68,10 +70,10 @@
 
             <div class="collapse navbar-collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav" style="margin-top:5px;">
-                    <li><a href="index.html"><span class="fa fa-home">  Home</a></li>
-                    <li><a href="showcase.html"><span class="fa fa-bar-chart">  Showcase</a></li>
+                    <li><a href="home"><span class="fa fa-home">  Home</a></li>
+                    <li><a href="showcase"><span class="fa fa-bar-chart">  Showcase</a></li>
                     <li>
-                        <a href="about.html"><span class="fa fa-question" /> About</a>
+                        <a href="about"><span class="fa fa-question" /> About</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav pull-right" style="margin-top:5px;">
@@ -89,154 +91,7 @@
     <!--navbar bitiş-->
 
 
-    <div class="container-fluid" style="margin-top:80px;">
-        <div class="row">
-            <div class="col-lg-12" style="text-align:center">
-                <div class="panel panel-default" style="border-color:#f2f2f2;border:none;">
-                    <span><img src="img/drawing3.svg"/></span>
-                    <h2>mihenk.js</h2>
-                    <h6>d3.js based Chart Library</h6>
-                    <a href="showcase.html" class="btn btn-primary" style="margin-bottom:30px;width:123px">
-                        <span class="fa fa-line-chart" /> Showcase
-                    </a>
-                    <a href="#" class="btn btn-danger" style="margin-bottom:30px">
-                        <span class="fa fa-book" /> Documentation
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row" >
-            <div class="col-lg-12" >
-                    <div class="col-lg-4 col-sm-6">
-                        <br>
-                        <div class="thumbnail" style="text-align:center;border:none">
-                            <br>
-                            <span class="fa fa-unlock fa-3x" style="color:#34495e"/>
-                            <div class="caption">
-                                <h5>Open Source</h5>
-                                <p style="font-size:14px;">Mihenk is available under the GPLv3 license</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <div class="thumbnail" style="text-align:center;border:none">
-                            <br>
-                            <span class="fa fa-search-plus fa-3x" style="color:#34495e">                              
-                            <div class="caption">
-                                <h5>Zoom & Drag</h5>
-                                <p style="font-size:14px">Use the mouse to pan by clicking on the background, or drag by clicking on individual dots; you may also use the mousewheel to zoom</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <div class="thumbnail" style="text-align:center;border:none">
-                            <br>
-                            <span class="fa fa-check fa-3x" style="color:#34495e"/>
-                            <div class="caption">
-                                <h5>Easy Usage</h5>
-                                <p style="font-size:14px">You can personalize by changing the settings easily</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                    <div class="col-lg-4 col-sm-6">
-                        <br>
-                        <div class="thumbnail" style="text-align:center;border:none">
-                            <br>
-                            <div class="row">
-                                <div class="col-lg-6"><span class="fa fa-chrome fa-3x pull-right" style="color:#34495e"/></div>
-                                <div class="col-lg-6"><span class="fa fa-firefox fa-3x pull-left" style="color:#34495e"/></div>
-                            </div>
-                            
-                            <!--<span class="fa fa-firefox"/>-->
-                            <div class="caption">
-                                <h5>Chrome & Firefox Tested</h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <div class="thumbnail" style="text-align:center;border:none">
-                            <br>
-                            <span class="fa fa-camera fa-3x" style="color:#34495e">                              
-                            <div class="caption">
-                                <h5>Download Svg & Png</h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <br>
-                        <div class="thumbnail" style="text-align:center;border:none">
-                            <br>
-                            <span class="fa fa-arrows fa-3x" style="color:#34495e" />
-                            <div class="caption">
-                                <h5>Responsive Design</h5>
-
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-9 col-sm-6">
-                <div class="panel panel-default"  style="border-color:#f2f2f2;border:none" ng-init="test2()">
-                    <br>
-                    <button ng-click="pngindir('graph')" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Png</button>
-                    <button ng-click="svgindir('graph')" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-download" /> Svg</button>
-                    <button ng-click="test2()" class="btn btn-info btn-sm pull-right" style="margin-top:3px;margin-right:5px;"><span class="fa fa-refresh" /></button>
-                    <br>
-                    <div id="graph">
-                        <svg></svg>
-                    </div>
-                </div>
-            </div>
-            <script>hljs.initHighlightingOnLoad();</script>
-            <div class="col-lg-3 col-sm-6">
-                    
-                    <pre style="background-color: #fff;border: 1px solid #fff;"><code class="javascript hljs"><h6 style="text-align:center"><span class="fa fa-code"/> Example Javascript Code</h6>
-var mihenkdata = {
-   "xdata": [1, 2, 3, 4, 5],
-   "ydata": [4, 5, 6, 7, 8],
-   "opt": {
-     "x_labels": [],
-     "y_labels": [],
-     "zoom": true,
-     "xlab": "x label",
-     "ylab": "y label",
-     "color": [],
-     "div_id": "graph"
-   }
-};
-
-mihenk.barchart(mihenkdata);
-                        </code></pre>
-                </div>
-        </div>
-        <div class="row">
-        <div class="col-lg-12 col-sm-6">
-            <div class="panel panel-default" style="border:none;font-size:13px">
-                
-                <h6 style="text-align:center"><span class=" fa fa-bell faa-pulse animated"> News</h6>
-                <div class="list-group" >
-                    <a href="../Mihenk/charts/line.html" class="list-group-item">Line chart added <p style="font-size:13px" class="pull-right">05.06.2016</p></a>
-                    <a href="../Mihenk/charts/error.html" class="list-group-item">Error chart added <p style="font-size:13px" class="pull-right">05.06.2016</p></a>
-                    <a href="../Mihenk/charts/box.html" class="list-group-item">Box chart added <p style="font-size:13px" class="pull-right">05.06.2016</p></a>
-                    <a href="../Mihenk/charts/barhorizontal.html" class="list-group-item">Horizontal bar chart added <p style="font-size:13px" class="pull-right">05.06.2016</p></a>
-                    <a href="../Mihenk/charts/barvertical.html" class="list-group-item">Vertical bar chart added <p style="font-size:13px" class="pull-right">05.06.2016</p></a>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+    <div ng-view></div>
     
     <div class="footer" style="background:white;text-align:center">
         <div class="container">
