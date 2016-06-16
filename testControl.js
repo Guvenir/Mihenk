@@ -234,6 +234,21 @@ app.controller('d3demo', function($scope) {
                 "div_id": "graph5"
             }
         }
+        
+        mihenkdata6 = {
+            "xdata": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,8,1,20,10,15],
+            "ydata": [21, 18, 23, 16, 25, 20, 27, 35, 29, 18, 16, 26, 33, 19, 35,24,35,25,15,5],
+            "r":[1,8,12,33,10,8,4,2,3,6,9,14,12,11,1,35,30,20,25,30],
+            "opt": {
+                "x_labels": [],
+                "y_labels": [],
+                "zoom": true,
+                "xlab": "x label",
+                "ylab": "y label",
+                "color": [],
+                "div_id": "graph6"
+            }
+        }
 
         mihenk.barchart(mihenkdata);
         mihenk.barhorizontal(mihenkdata2);
@@ -242,7 +257,7 @@ app.controller('d3demo', function($scope) {
         mihenk.box(mihenkdata3);
         mihenk.error(mihenkdata4);
         mihenk.line(mihenkdata5);
-
+        mihenk.bubble(mihenkdata6);
     }
 
     $scope.chart2 = function(grafik) {
@@ -442,6 +457,24 @@ app.controller('d3demo', function($scope) {
         }
 
         mihenk.line(mihenkdata);
+    }
+    
+    $scope.bubble = function(){
+        var mihenkdata = {
+            "xdata": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,8,1,20,10,15],
+            "ydata": [21, 18, 23, 16, 25, 20, 27, 35, 29, 18, 16, 26, 33, 19, 35,24,35,25,15,5],
+            "r":[1,8,12,33,10,8,4,2,3,6,9,14,12,11,1,35,30,20,25,30],
+            "opt": {
+                "x_labels": [],
+                "y_labels": [],
+                "zoom": true,
+                "xlab": "x label",
+                "ylab": "y label",
+                "color": [],
+                "div_id": "graph6"
+            }
+        };
+        mihenk.bubble(mihenkdata);
     }
 
     $scope.svgindir = function(val) {
